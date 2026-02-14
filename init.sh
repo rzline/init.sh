@@ -8,14 +8,14 @@ echo "========================================="
 
 # ---------- 1. 下载并安装 Cloudflared ----------
 echo "[1/5] 下载 Cloudflared ..."
-wget -q --show-progress https://github.com/cloudflare/cloudflared/releases/download/latest/cloudflared-linux-amd64
+wget https://github.com/cloudflare/cloudflared/releases/download/latest/cloudflared-linux-amd64
 mv cloudflared-linux-amd64 /usr/bin/cloudflared
 chmod +x /usr/bin/cloudflared
 echo "  ✔ Cloudflared 安装完成"
 
 # ---------- 2. 下载并安装 OpenList ----------
 echo "[2/5] 下载 OpenList ..."
-wget -q --show-progress https://github.com/OpenListTeam/OpenList/releases/download/latest/openlist-linux-musl-amd64.tar.gz
+wget https://github.com/OpenListTeam/OpenList/releases/download/latest/openlist-linux-musl-amd64.tar.gz
 tar -zxvf openlist-linux-musl-amd64.tar.gz
 mv openlist /usr/bin/openlist
 chmod +x /usr/bin/openlist
